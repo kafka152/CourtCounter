@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FF9800</item>
+        <item name="colorButtonNormal">#FF9800</item>
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+    <style name="appButton">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="teamMargins">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+    </style>
+
+    <style name="commonTextView">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#616161</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="scoreTextView">
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+</resources>

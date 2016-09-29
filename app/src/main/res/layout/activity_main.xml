@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.dashingpages.courtcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/teamMargins"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/teamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/commonTextView"
+                android:layout_gravity="center"
+                android:text="@string/teamA"/>
+
+            <TextView
+                android:id="@+id/numPointsA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/scoreTextView"
+                android:layout_gravity="center"
+                android:text="@string/countInit"/>
+
+            <Button
+                android:id="@+id/plusThreeA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/appButton"
+                android:text="@string/plusThree"
+                android:onClick="plusThreeA"
+                />
+
+            <Button
+                android:id="@+id/plusTwoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/appButton"
+                android:text="@string/plusTwo"
+                android:onClick="plusTwoA"
+                />
+
+            <Button
+                android:id="@+id/plusOneA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/appButton"
+                android:text="@string/plusOne"
+                android:onClick="plusOneA"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:background="@android:color/darker_gray"
+            >
+        </View>
+
+        <LinearLayout
+            style="@style/teamMargins"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/commonTextView"
+                android:layout_gravity="center"
+                android:text="@string/teamB"/>
+
+            <TextView
+                android:id="@+id/numPointsB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/scoreTextView"
+                android:layout_gravity="center"
+                android:text="@string/countInit"/>
+
+            <Button
+                android:id="@+id/plusThreeB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/appButton"
+                android:text="@string/plusThree"
+                android:onClick="plusThreeB"
+                />
+
+            <Button
+                android:id="@+id/plusTwoB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/appButton"
+                android:text="@string/plusTwo"
+                android:onClick="plusTwoB"
+                />
+
+            <Button
+                android:id="@+id/plusOneB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/appButton"
+                android:text="@string/plusOne"
+                android:onClick="plusOneB"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/appButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/buttonReset"
+        android:onClick="resetPoints"
+        android:layout_marginBottom="32dp"
+        />
+</RelativeLayout>
